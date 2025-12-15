@@ -16,32 +16,56 @@ st.set_page_config(
 # -----------------------------
 st.markdown("""
 <style>
+/* Page background */
 body {
     background-color: #f4fff4;
 }
 .main {
     background-color: #f4fff4;
 }
-h1, h2, h3 {
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
     color: #2e7d32;
 }
+
+/* Labels */
+label {
+    color: #1b5e20 !important;
+    font-weight: 600;
+}
+
+/* Number input box */
+.stNumberInput input {
+    background-color: #e8f5e9 !important;
+    color: #1b5e20 !important;   /* 👈 TEXT COLOR FIX */
+    border-radius: 10px;
+    border: 1px solid #a5d6a7;
+}
+
+/* Placeholder text */
+.stNumberInput input::placeholder {
+    color: #388e3c !important;
+}
+
+/* Button */
 .stButton>button {
     background-color: #81c784;
-    color: black;
+    color: #1b5e20;
     font-weight: bold;
     border-radius: 12px;
     height: 3em;
     width: 100%;
 }
-.stNumberInput input {
-    background-color: #e8f5e9;
-}
+
+/* Output card */
 .output-card {
     background-color: #e8f5e9;
     padding: 20px;
     border-radius: 15px;
     margin-top: 15px;
     border-left: 6px solid #66bb6a;
+    color: #1b5e20;   /* 👈 OUTPUT TEXT FIX */
 }
 </style>
 """, unsafe_allow_html=True)
