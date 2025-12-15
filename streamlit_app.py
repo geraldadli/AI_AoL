@@ -117,7 +117,7 @@ if st.button("🌾 Predict Actuator Status"):
     prediction = model.predict(input_data)[0]
 
     # Map output
-    status_map = {0: "OFF ❌", 1: "ON ✅"}
+    status_map = {0: "OFF", 1: "ON"}
 
     fan_status = status_map[prediction[0]]
     watering_plant_status = status_map[prediction[1]]
